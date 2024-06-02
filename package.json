@@ -10,10 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.6.0",
+    "@astrojs/check": "^0.7.0",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/cabin": "^5.0.18",
-    "astro": "^4.7.1",
+    "astro": "^4.9.2",
     "date-fns": "^3.6.0",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"
