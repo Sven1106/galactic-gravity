@@ -10,7 +10,7 @@ const { headings } = Astro.props;
     <ul>
         {
             headings.map(heading => (
-                <li class="text-xl mb-4 text-zinc-500">
+                <li class="mb-4 text-xl text-zinc-500">
                     <a href={`#${heading.slug}`}>{heading.text}</a>
                 </li>
             ))

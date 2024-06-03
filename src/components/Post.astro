@@ -14,15 +14,15 @@ const { post } = Astro.props;
             alt={post.data.title}
             width={1024}
             height={1024 / 2}
-            class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+            class="mb-6 aspect-thumbnail rounded-2xl object-cover shadow-xl"
         />
     </a>
     <a
         href={`/blog/${post.slug}`}
-        class="text-4xl text-zinc-900 mb-4 font-semibold inline-block">
+        class="mb-4 inline-block text-4xl font-semibold text-zinc-900">
         <h2>{post.data.title}</h2>
     </a>
-    <p class="text-zinc-500 text-2xl mb-9 line-clamp-2">
+    <p class="mb-9 line-clamp-2 text-2xl text-zinc-500">
         {post.body}
     </p>
 </article>

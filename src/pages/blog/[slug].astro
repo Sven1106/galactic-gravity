@@ -29,21 +29,21 @@ const { Content, headings } = await post.render();
     <Main>
         <a
             href="/blog"
-            class="text-zinc-500 text-2xl mb-16 underline block"
+            class="mb-16 block text-2xl text-zinc-500 underline"
             >← Back to all blogs</a
         >
         <H1 text={post.data.title} />
         <img
             src={'.' + post.data.image}
             alt={post.data.title}
-            class="rouded-2xl shadow-xl mb-28 aspect-thumbnail object-cover"
+            class="rouded-2xl mb-28 aspect-thumbnail object-cover shadow-xl"
         />
         <div class="mb-10">
             <TableOfContents headings={headings} />
         </div>
         <div class="relative">
             <Share post={post} />
-            <div class="prose lg:prose-2xl overflow-visible relative">
+            <div class="prose relative overflow-visible lg:prose-2xl">
                 <Content />
             </div>
         </div>
